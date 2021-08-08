@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+$colorBorderFill: #3498db;
+$colorBorderEmpty: #e0e0e0;
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Muli", sans-serif;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #f6f7fb;
+}
+.container {
+    text-align: center;
+    .progress-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        width: 350px;
+        margin-bottom: 30px;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: "";
+            background-color: $colorBorderEmpty;
+            width: 100%;
+            height: 4px;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 0;
+            z-index: -1;
+        }
+        .progress {
+            position: absolute;
+            background-color: $colorBorderFill;
+            width: 0%;
+            height: 4px;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 0;
+            z-index: -1;
+            transition: width 0.4s ease;
+        }
+
+        .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 3px solid $colorBorderEmpty;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.active {
+                border-color: $colorBorderFill;
+                transition: border 0.4s ease 0.3s;
+            }
+        }
+    }
+    .btn {
+        outline: none;
+        border: 0;
+        padding: 8px 30px 8px 30px;
+        background-color: $colorBorderFill;
+        color: white;
+        font-size: 14px;
+        border-radius: 20px;
+        cursor: pointer;
+        &:disabled {
+            background-color: $colorBorderEmpty;
+            cursor: not-allowed;
+        }
+    }
+}

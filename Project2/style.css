@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #f6f7fb;
+}
+
+.container {
+  text-align: center;
+}
+
+.container .progress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+  width: 350px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.container .progress-container:before {
+  position: absolute;
+  content: "";
+  background-color: #e0e0e0;
+  width: 100%;
+  height: 4px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+
+.container .progress-container .progress {
+  position: absolute;
+  background-color: #3498db;
+  width: 0%;
+  height: 4px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+}
+
+.container .progress-container .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #e0e0e0;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .progress-container .circle.active {
+  border-color: #3498db;
+  -webkit-transition: border 0.4s ease 0.3s;
+  transition: border 0.4s ease 0.3s;
+}
+
+.container .btn {
+  outline: none;
+  border: 0;
+  padding: 8px 30px 8px 30px;
+  background-color: #3498db;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.container .btn:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+/*# sourceMappingURL=style.css.map */
