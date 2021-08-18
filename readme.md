@@ -7,7 +7,7 @@
 |  #  | Project                                                                                                                     | Live Demo                                                                         |
 | :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | 01  | [Expanding Cards](https://github.com/thanhsang1999/50Projects/tree/master/Project1)                             | [Live Demo](https://thanhsang1999.github.io/50Projects/Project1/)               |
-| 02  | [Progress Steps](https://github.com/thanhsang1999/50Projects/tree/master/Project2)                               | [Live Demo](https://50projects50days.com/projects/Project2/)                |
+| 02  | [Progress Steps](https://github.com/thanhsang1999/50Projects/tree/master/Project2)                               | [Live Demo](https://50projects50days.com/50Projects/Project2/)                |
 | 03  | [Rotating Navigation Animation](https://github.com/thanhsang1999/50Projects/tree/master/Project3)                       | [Live Demo](https://thanhsang1999.github.io/50Projects/Project3/)                   |
 | 04  | [Hidden Search Widget](https://github.com/thanhsang1999/50Projects/tree/master/Project4)                          |  [Live Demo](https://thanhsang1999.github.io/50Projects/Project4/)                   |
 | 05  | [Blurry Loading](https://github.com/thanhsang1999/50Projects/tree/master/Project5)                          |  [Live Demo](https://thanhsang1999.github.io/50Projects/Project5/)                   |
