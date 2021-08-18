@@ -62,5 +62,6 @@
 |#| Name Project| Link Demo|
 |:-:|---------| ------ |
 |1|[Pop cat](https://github.com/thanhsang1999/50Projects/tree/master/ProjectAutoClick)|[live demo](https://thanhsang1999.github.io/50Projects/ProjectAutoClick/)|
+|2|[Input radio](https://github.com/thanhsang1999/50Projects/tree/master/ProjectRadio)|[live demo](https://thanhsang1999.github.io/50Projects/ProjectRadio/)|
 
 cre: [50projects50days](https://50projects50days.com/)
