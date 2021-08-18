@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.console {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  transition: width 1s ease;
+  &.left {
+    width: 50%;
+    background: linear-gradient(#3498db70, #3498db70), url(./asset/img/ps.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:hover {
+      width: 175%;
+    }
+  }
+  &.right {
+    width: 50%;
+    background-image: url(./asset/img/xbox.jpg);
+    background: linear-gradient(#34495e70, #34495e70), url(./asset/img/xbox.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:hover {
+      width: 175%;
+    }
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 50px;
+    transform: translateY(-100%);
+  }
+  .btn {
+    transform: translateY(-50%);
+    width: 300px;
+    height: 80px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: 5px solid white;
+    background: transparent;
+    cursor: pointer;
+    &--primary:hover {
+      background: #3498db;
+      border-color: #3498db;
+    }
+    &--secondary:hover {
+      background: #34495e;
+      border-color: #34495e;
+    }
+  }
+}
+.right:hover {
+  width: 80%;
+}
+.right:hover + .console:first-of-type {
+  width: 20%;
+}

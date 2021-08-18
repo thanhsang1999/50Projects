@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.console {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+.console.left {
+  width: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3498db70), to(#3498db70)), url(./asset/img/ps.jpg);
+  background: linear-gradient(#3498db70, #3498db70), url(./asset/img/ps.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.console.left:hover {
+  width: 175%;
+}
+
+.console.right {
+  width: 50%;
+  background-image: url(./asset/img/xbox.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(#34495e70), to(#34495e70)), url(./asset/img/xbox.jpg);
+  background: linear-gradient(#34495e70, #34495e70), url(./asset/img/xbox.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.console.right:hover {
+  width: 175%;
+}
+
+.console h1 {
+  color: #fff;
+  font-size: 50px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.console .btn {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 300px;
+  height: 80px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border: 5px solid white;
+  background: transparent;
+  cursor: pointer;
+}
+
+.console .btn--primary:hover {
+  background: #3498db;
+  border-color: #3498db;
+}
+
+.console .btn--secondary:hover {
+  background: #34495e;
+  border-color: #34495e;
+}
+
+.right:hover {
+  width: 80%;
+}
+
+.right:hover + .console:first-of-type {
+  width: 20%;
+}
+/*# sourceMappingURL=style.css.map */

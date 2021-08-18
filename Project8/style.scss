@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-image: linear-gradient(to right, #3498db, #2980b9);
+}
+
+.login {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #34495e;
+  width: 380px;
+  border-radius: 20px;
+  padding: 20px 40px 30px 40px;
+  color: #fff;
+  &__title {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+
+  &__btn {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #add8e6;
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:active {
+      background: #81b3c4;
+      transform: scale(0.95);
+    }
+  }
+  &__text {
+    margin-right: auto;
+    a {
+      color: #add8e6;
+      text-decoration: none;
+    }
+  }
+}
+.form-control {
+  position: relative;
+  width: 300px;
+  margin: 20px 0 40px;
+  &__input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    color: #fff;
+    border: 0px;
+    border-bottom: 2px solid #add8e6;
+    padding-block: 15px;
+    font-size: 18px;
+    &:focus,
+    &:valid {
+      outline: none;
+      & ~ .form-control__text {
+        span {
+          color: lightblue;
+          transform: translateY(-30px);
+        }
+      }
+    }
+  }
+  &__text {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    cursor: text;
+    span {
+      transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      display: inline-block;
+    }
+  }
+}
