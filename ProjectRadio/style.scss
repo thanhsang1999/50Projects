@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background: #34495ef6;
+}
+.address {
+  &__list {
+    padding: 0;
+    list-style-type: none;
+  }
+  &__item {
+    margin-bottom: 15px;
+  }
+  &__label {
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    font-size: 25px;
+  }
+  &__input {
+    position: absolute;
+    opacity: 0;
+    &:checked ~ .address__circle {
+      background-color: #3498db;
+      &::before {
+        display: block;
+      }
+    }
+  }
+  &__circle {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: rgb(240, 232, 232);
+    border-radius: 50%;
+    top: 0;
+    left: -35px;
+    &:hover {
+      background-color: rgb(196, 185, 185);
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: white;
+      top: 9px;
+      left: 9px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      z-index: 1;
+      display: none;
+    }
+  }
+}
+.address2 {
+  &__list {
+    padding: 0;
+    list-style-type: none;
+  }
+  &__item {
+    margin-bottom: 15px;
+  }
+  &__label {
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    font-size: 25px;
+  }
+  &__input {
+    position: absolute;
+    opacity: 0;
+    &:checked ~ .address2__circle {
+      background-color: #3498db;
+      border-color: #3498db;
+    }
+  }
+  &__circle {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    top: 0;
+    left: -35px;
+    border: 3px solid rgb(218, 215, 215);
+    &:hover {
+      border-color: #3498db;
+    }
+  }
+}

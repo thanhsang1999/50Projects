@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background: #34495ef6;
+}
+
+.address__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.address__item {
+  margin-bottom: 15px;
+}
+
+.address__label {
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+  font-size: 25px;
+}
+
+.address__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.address__input:checked ~ .address__circle {
+  background-color: #3498db;
+}
+
+.address__input:checked ~ .address__circle::before {
+  display: block;
+}
+
+.address__circle {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-color: #f0e8e8;
+  border-radius: 50%;
+  top: 0;
+  left: -35px;
+}
+
+.address__circle:hover {
+  background-color: #c4b9b9;
+}
+
+.address__circle::before {
+  content: '';
+  position: absolute;
+  background-color: white;
+  top: 9px;
+  left: 9px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  z-index: 1;
+  display: none;
+}
+
+.address2__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.address2__item {
+  margin-bottom: 15px;
+}
+
+.address2__label {
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+  font-size: 25px;
+}
+
+.address2__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.address2__input:checked ~ .address2__circle {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+.address2__circle {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  top: 0;
+  left: -35px;
+  border: 3px solid #dad7d7;
+}
+
+.address2__circle:hover {
+  border-color: #3498db;
+}
+/*# sourceMappingURL=style.css.map */
