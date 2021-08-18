@@ -20,6 +20,9 @@ body {
   }
   &__item {
     margin-bottom: 15px;
+    &:hover .address__circle {
+      background-color: rgb(196, 185, 185);
+    }
   }
   &__label {
     position: relative;
@@ -45,9 +48,8 @@ body {
     border-radius: 50%;
     top: 0;
     left: -35px;
-    &:hover {
-      background-color: rgb(196, 185, 185);
-    }
+    transition: all 0.2s ease-in;
+
     &::before {
       content: '';
       position: absolute;
@@ -69,6 +71,9 @@ body {
   }
   &__item {
     margin-bottom: 15px;
+    &:hover .address2__circle {
+      border-color: #3498db;
+    }
   }
   &__label {
     position: relative;
@@ -93,8 +98,6 @@ body {
     top: 0;
     left: -35px;
     border: 3px solid rgb(218, 215, 215);
-    &:hover {
-      border-color: #3498db;
-    }
+    transition: all 0.2s ease-in;
   }
 }
