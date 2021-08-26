@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+//color
+$color-primary: #22254b;
+$color-secondary: #373b69;
+$color-placeholder: #7378c5;
+$color-info: #eee;
+$color-score-green: lightgreen;
+$color-score-orange: orange;
+$color-score-red: red;
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: $color-primary;
+}
+header {
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: $color-secondary;
+  form {
+    input {
+      background-color: transparent;
+      border: 2px solid $color-primary;
+      font-family: inherit;
+      color: #fff;
+      font-size: 16px;
+      padding: 8px 16px;
+      border-radius: 50px;
+      &:focus {
+        outline: none;
+        background-color: $color-primary;
+      }
+      &::placeholder {
+        color: $color-placeholder;
+      }
+    }
+  }
+}
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  .movie {
+    width: 300px;
+    margin: 16px;
+    background-color: $color-secondary;
+    box-shadow: 0px 4px 5px rgba($color: #000000, $alpha: 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+    .movie__info {
+      color: $color-info;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px 16px;
+      letter-spacing: 0.5px;
+      .movie__title {
+        margin-top: 0px;
+      }
+      .movie__score {
+        background-color: $color-primary;
+        padding: 4px 8px;
+        border-radius: 3px;
+        font-weight: bold;
+        &--green {
+          color: $color-score-green;
+        }
+        &--orange {
+          color: $color-score-orange;
+        }
+        &--red {
+          color: $color-score-red;
+        }
+      }
+    }
+    .movie__over-view {
+      background-color: #fff;
+      padding: 32px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      max-height: 100%;
+      transform: translateY(101%);
+      transition: all 0.3s ease-in;
+    }
+    &:hover {
+      .movie__over-view {
+        transform: translateY(0%);
+      }
+    }
+  }
+}

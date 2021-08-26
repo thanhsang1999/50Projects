@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #22254b;
+}
+
+header {
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #373b69;
+}
+
+header form input {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  font-family: inherit;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+
+header form input:focus {
+  outline: none;
+  background-color: #22254b;
+}
+
+header form input::-webkit-input-placeholder {
+  color: #7378c5;
+}
+
+header form input:-ms-input-placeholder {
+  color: #7378c5;
+}
+
+header form input::-ms-input-placeholder {
+  color: #7378c5;
+}
+
+header form input::placeholder {
+  color: #7378c5;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .movie {
+  width: 300px;
+  margin: 16px;
+  background-color: #373b69;
+  -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+main .movie img {
+  width: 100%;
+}
+
+main .movie .movie__info {
+  color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 16px 16px;
+  letter-spacing: 0.5px;
+}
+
+main .movie .movie__info .movie__title {
+  margin-top: 0px;
+}
+
+main .movie .movie__info .movie__score {
+  background-color: #22254b;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+main .movie .movie__info .movie__score--green {
+  color: lightgreen;
+}
+
+main .movie .movie__info .movie__score--orange {
+  color: orange;
+}
+
+main .movie .movie__info .movie__score--red {
+  color: red;
+}
+
+main .movie .movie__over-view {
+  background-color: #fff;
+  padding: 32px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 100%;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+main .movie:hover .movie__over-view {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+/*# sourceMappingURL=style.css.map */
