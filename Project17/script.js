@@ -1,5 +1,5 @@
 const API_URL =
-  'https:api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=d30752ffc423bf0d3f21d7d8d7e02df5&page=1&language=vi';
+  'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=d30752ffc423bf0d3f21d7d8d7e02df5&page=1&language=vi';
 const IMAGE_PATH = 'https://image.tmdb.org/t/p/w1280/';
 const SEARCH_API =
   'https://api.themoviedb.org/3/search/movie?api_key=d30752ffc423bf0d3f21d7d8d7e02df5&language=vi&page=1&query=';
