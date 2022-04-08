@@ -15,7 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100);
   });
   resultEL.addEventListener('click', (e) => {
-    console.log(resultEL.innerText);
-    navigator.clipboard.writeText(copyText.value);
+    document.execCommand("copy");
+
+  });
+  resultEL.addEventListener("copy", function(event) {
+    event.preventDefault();
+    if (event.clipboardData) {
+      event.clipboardData.setData("text/plain", resultEL.textContent);
+    }
   });
 });
